@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'ShopWizApp';
 
   loadedFeature='recipe';
-  onNavigate(feature: string){
+  onNavigate(feature:any){
     this.loadedFeature=feature;
   }
 }

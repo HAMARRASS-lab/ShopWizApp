@@ -10,16 +10,10 @@ export class AppComponent implements OnInit{
 
   title = 'ShopWizApp';
 
-  loadedFeature='recipe';
-  onNavigate(feature:any){
-    this.loadedFeature=feature;
-  }
+  
 
-  ngOnInit(): void {
-    interval(1000).subscribe(count =>{
-      console.log(count)
-     
-    })
+  ngOnInit() {
+
   }
 }
 //////video 7

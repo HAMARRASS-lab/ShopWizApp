@@ -1,19 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { interval } from 'rxjs';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
+  loadedFeature = 'recipe';
 
-  title = 'ShopWizApp';
+  onNavigate(feature: any) {
+    this.loadedFeature = feature;
+  }
 
   
-
-  ngOnInit() {
-
-  }
 }
-//////video 7
